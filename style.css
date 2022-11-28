@@ -1,0 +1,97 @@
+.container {
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.lightBlue {
+  background-image: linear-gradient(
+    360deg,
+    rgb(68, 144, 190),
+    rgb(251, 254, 241)
+  );
+}
+
+.darkBlue {
+  background-image: linear-gradient(
+    360deg,
+    rgb(85, 217, 233),
+    rgb(18, 12, 102)
+  );
+  color: #f3f6f8;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  width: 400px;
+  gap: 5px;
+}
+
+#inputCity {
+  width: 150px;
+}
+
+#btnSubmit {
+  width: 100px;
+  background: white;
+}
+
+#btnSubmit:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    300deg,
+    rgb(233, 121, 112),
+    rgb(213, 192, 80)
+  );
+}
+
+#btnSubmit,
+#inputCity,
+select {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+#img-container,
+#weekDay-container {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+#weekDay-container {
+  margin-top: 50px;
+}
+
+#img-container {
+  margin-top: 20px;
+}
+
+#img-container img {
+  width: 100px;
+}
+
+#weekDay-container {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#weekDay-container span {
+  width: 100px;
+  text-align: center;
+}

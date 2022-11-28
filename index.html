@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>🌈WeatherForcast</title>
+  </head>
+  <body class="lightBlue">
+    <div class="container">
+      <h1>Weather App</h1>
+      <div id="form">
+        <input type="text" placeholder="Add a city" id="inputCity" />
+        <select name="days-selected" id="number-of-days">
+          <option value="oneDay">1 day</option>
+          <option value="threeDays">3 days</option>
+          <option value="fiveDays">5 days</option>
+          <option value="sevenDays">7 days</option>
+        </select>
+        <button id="btnSubmit">Submit</button>
+      </div>
+      <div id="weekDay-container"></div>
+      <div id="img-container"></div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
