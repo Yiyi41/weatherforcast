@@ -1,4 +1,4 @@
-const opencagedataKey = "3c6436110d4e4f8785b94d4c91792b1e";
+const opencagedataKey = "7549ef3c510041a1944be63b22641331";
 const openWeatherKey = "727bc62434f50a6a25a292925405f678";
 
 const inputCity = document.getElementById("inputCity");
@@ -18,8 +18,9 @@ function getLocation(cityName) {
   )
     .then((res) => res.json())
     .then((data) => {
+      console.log(data.results[0]);
       return data.results[0].geometry;
-      //   console.log(geometry);
+
       //   return geometry;
     })
     .catch(() => console.log("error"));
@@ -41,6 +42,7 @@ async function getWeather(coord) {
 
 // FUNC FOR REMOVING PREVIOUS DISPLAY WHEN SEARCH ANOTHER CITY WEATHER
 function removeImgAndSpan() {
+  // réécir la fonction
   const weekDayContainer = document.getElementById("weekDay-container");
 
   const imgContainer = document.getElementById("img-container");
@@ -60,6 +62,7 @@ function createImg(imgName) {
   const imgContainer = document.getElementById("img-container");
   const img = document.createElement("img");
   img.src = `./assets/${imgName}.svg`;
+  //img.alt
   imgContainer.appendChild(img);
 }
 
@@ -87,6 +90,8 @@ async function myFunctionResolve() {
     body.classList.add("darkBlue");
   }
 
+  // un aure if pour de jour à la nuit
+
   removeImgAndSpan(); // ---> remove previous weather display before new search
 
   // get value of option of nb days to display
@@ -108,13 +113,13 @@ async function myFunctionResolve() {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
 
   for (let iDay = 0; iDay < nbDaysToDisplay; iDay++) {
     // console.log("today + iDay" + (today + iDay));
     // console.log("iDay " + iDay);
-    createWeekDaySpan(weekTab[(today + iDay) % 7]); // % for reset my loop to 0 every if iDay equal to 6
+    createWeekDaySpan(weekTab[(today + iDay) % 7]); // % for reset my loop to 0 every time if iDay equal to 6
 
     // ---> making dynamiclly icon's src to display weather icons
     let weatherId = weatherResults.daily[iDay].weather[0].id;
