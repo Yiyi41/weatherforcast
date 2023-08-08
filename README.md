@@ -3,8 +3,9 @@ This is a small weather app for searching the weather of the city you want, you 
 The app is in html, vanilla js. I used 2 API: opencagedata and openweathermap. 
 
 
-
+<p align="center" >
 <img align="center" width="300" src="https://res.cloudinary.com/dps4zteie/image/upload/v1691491325/Capture_d_e%CC%81cran_2023-08-08_a%CC%80_12.40.19_nqhcqg.png"/>
 
 <img align="center" width="300" src="https://res.cloudinary.com/dps4zteie/image/upload/v1691491325/Capture_d_e%CC%81cran_2023-08-08_a%CC%80_12.41.08_b8rm92.png"/>
 
+<p/ >
