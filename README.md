@@ -8,6 +8,8 @@ The app is in html, vanilla js. I used 2 API: opencagedata and openweathermap.
 
 <br/>
 
+
+
 <img align="center" width="300" src="https://res.cloudinary.com/dps4zteie/image/upload/v1691491325/Capture_d_e%CC%81cran_2023-08-08_a%CC%80_12.41.08_b8rm92.png"/>
 
 
