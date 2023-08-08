@@ -6,3 +6,4 @@ The app is in html, vanilla js. I used 2 API: opencagedata and openweathermap.
 
 
 
+
